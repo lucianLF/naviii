@@ -11,6 +11,7 @@ import type { BookMarks } from "@/assets/ts/types";
 //luc fix 换成接口请求书签
 import axios from 'axios'
 
+//在这里修改书签请求地址
 async function getBookmark() {
   var info = await axios.get('https://un.sofng.cn/bookmarks.php')
   return info.data;
