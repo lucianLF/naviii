@@ -16,6 +16,7 @@ async function getBookmark() {
   var info = await axios.get('https://un.sofng.cn/bookmarks.php')
   return info.data;
 }
+//在这里修改搜索引擎请求地址
 async function getSearch() {
   var info = await axios.get('https://un.sofng.cn/search.php')
   return info.data;
