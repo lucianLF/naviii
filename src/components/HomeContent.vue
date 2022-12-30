@@ -38,13 +38,18 @@ const bookMarks = computed(() => {
 </script>
 
 <template>
-  <n-layout-content
+  <!-- <n-layout-content
     id="content"
     :style="{
       'background-image': store.isDarkTheme
         ? contentTheme.dark
         : contentTheme.light,
     }"
+    :native-scrollbar="false"
+  > -->
+  <n-layout-content
+    id="content"
+    
     :native-scrollbar="false"
   >
     <HomeContentBar />
@@ -74,7 +79,6 @@ const bookMarks = computed(() => {
         class="card"
         :title="itemTitle(item)"
         :bordered="false"
-        hoverable
         v-for="(item, index) in bookMarks.folder"
         :key="item.title + index"
       >
@@ -102,7 +106,10 @@ const bookMarks = computed(() => {
 .card {
   border-radius: 10px;
   margin-bottom: 24px;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.00);
+  /* backdrop-filter: blur(10px); */
+}
+.n-layout-content{
+  background-color: rgba(255, 255, 255, 0) !important;
 }
 </style>

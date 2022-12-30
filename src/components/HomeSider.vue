@@ -61,9 +61,9 @@ function handleMenuValueUpdate(key: string, option: MenuOption) {
     show-trigger
     collapse-mode="width"
     :style="{
-      'background-image': store.isDarkTheme
-        ? contentTheme.dark
-        : contentTheme.light,
+      // 'background-image': store.isDarkTheme
+      //   ? contentTheme.dark
+      //   : contentTheme.light,
     }"
     :native-scrollbar="false"
     :collapsed-width="50"
@@ -88,7 +88,8 @@ function handleMenuValueUpdate(key: string, option: MenuOption) {
 
 <style scoped>
 .n-layout-sider {
-  --n-border-color: rgba(255, 255, 255, 0.05) !important;
+  --n-border-color: rgba(5, 4, 4, 0.05) !important;
+  background-color:rgba(255, 255, 255, 0) !important;
 }
 .n-menu {
   height: 100vh;
