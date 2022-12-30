@@ -87,7 +87,7 @@ function handleBeforeunload() {
   padding-right: 24px;
 }
 .search-prefix {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 .search-icon:hover {
   cursor: pointer;

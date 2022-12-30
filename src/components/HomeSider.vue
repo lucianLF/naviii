@@ -92,7 +92,7 @@ function handleMenuValueUpdate(key: string, option: MenuOption) {
   background-color:rgba(255, 255, 255, 0) !important;
 }
 .n-menu {
-  height: 100vh;
+  height: 96vh;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
 }
