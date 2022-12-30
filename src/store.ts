@@ -16,7 +16,12 @@ async function getBookmark() {
   var info = await axios.get('https://un.sofng.cn/bookmarks.php')
   return info.data;
 }
+async function getSearch() {
+  var info = await axios.get('https://un.sofng.cn/search.php')
+  return info.data;
+}
 var userbookMark = await getBookmark();
+var usersearch = await getSearch();
 console.log(userbookMark);
 
 const db = new LocalDB();
@@ -24,7 +29,7 @@ const iconAPI = db.iconAPI;
 const userbookMarks = db.bookMarks;
 const searchJump = db.searchJump;
 const openBookMarkJump = db.openBookMarkJump;
-const searchEngine = db.searchEngine;
+const searchEngine = usersearch;
 const isDarkTheme = db.theme == "dark" ? true : false;
 
 //luc fix 换成接口请求书签

@@ -34,7 +34,7 @@ const cardTitlePrefix = "📎";
 const iconAPI = "https://toxic-olive-salmon.faviconkit.com/";
 
 const enginesMap: { [key: string]: string[] } = defaultEnginesMap;
-const defaultEngineKey = "d";
+const defaultEngineKey = "bd";
 
 const bookMarks: BookMarks[] = defaultBookMarks;
 const fixedMenuOptions = (isDarkTheme: boolean): MenuOption[] => {
