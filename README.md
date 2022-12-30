@@ -1,6 +1,6 @@
 <h1 align="center">naviii</h1>
 
-<h2 align="center">这个已经被我修改成请求api获取数据了 要用的话可能得自己改api</h2>
+<h2 align="center">这个已经被我修改成请求api获取数据了 要用的话可能得自己改api,所以大家请访问原作者仓库<a href="https://github.com/eehhh/naviii">[eehhh/naviii]</a></h2>
 <h4 align="center">一个简单优雅的导航页</h4>
 
 <p align="center">
