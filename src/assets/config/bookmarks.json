@@ -1,12 +1,32 @@
 [
   {
-    "title": "DuckDuckGo",
-    "link": "duckduckgo.com",
-    "menuIcon": "⭐"
+    "title": "知乎",
+    "link": "zhihu.com",
+    "menuIcon": "知"
   },
   {
-    "title": "Wiki",
-    "link": "zh.wikipedia.org/wiki"
+    "title": "bilibili",
+    "link": "www.bilibili.com",
+    "menuIcon": ""
+  },
+  {
+    "title": "视频",
+    "link": "www.llyady.com",
+    "menuIcon": "🎞"
+  },
+  {
+    "menuIcon": "🔧",
+    "title": "工具",
+    "items": [
+      {
+        "title": "大写人民币",
+        "link": "www.rmbdx.com"
+      },
+      {
+        "title": "墨刀",
+        "link": "modao.cc/dashboard/me"
+      }
+    ]
   },
   {
     "title": "社区",
@@ -14,40 +34,6 @@
       {
         "title": "Github",
         "link": "github.com/trending"
-      },
-      {
-        "title": "V2EX",
-        "link": "v2ex.com"
-      }
-    ]
-  },
-  {
-    "title": "致谢",
-    "menuIcon": "💘",
-    "items": [
-      {
-        "title": "Vue",
-        "link": "vuejs.org"
-      },
-      {
-        "title": "NaiveUI",
-        "link": "naiveui.com"
-      },
-      {
-        "title": "Vite",
-        "link": "vitejs.dev"
-      },
-      {
-        "title": "TypeScript",
-        "link": "typescriptlang.org"
-      },
-      {
-        "title": "CodeMirror",
-        "link": "codemirror.net"
-      },
-      {
-        "title": "FaviconKit",
-        "link": "faviconkit.com"
       }
     ]
   }

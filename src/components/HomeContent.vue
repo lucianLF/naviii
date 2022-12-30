@@ -18,6 +18,7 @@ const itemTitle = (item: BookMarks) => {
 const bookMarks = computed(() => {
   let stack = [];
   let folder = [];
+  console.log(store.bookMarks)
   for (let item of store.bookMarks) {
     if (!item.items) {
       if (item.link) {

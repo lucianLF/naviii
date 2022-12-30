@@ -8,6 +8,15 @@ import {
 import { LocalDB } from "@/assets/ts/db";
 import { defaultEngine } from "@/assets/ts/search";
 import type { BookMarks } from "@/assets/ts/types";
+//luc fix 换成接口请求书签
+import axios from 'axios'
+
+async function getBookmark() {
+  var info = await axios.get('https://un.sofng.cn/bookmarks.php')
+  return info.data;
+}
+var userbookMark = await getBookmark();
+console.log(userbookMark);
 
 const db = new LocalDB();
 const iconAPI = db.iconAPI;
@@ -16,10 +25,13 @@ const searchJump = db.searchJump;
 const openBookMarkJump = db.openBookMarkJump;
 const searchEngine = db.searchEngine;
 const isDarkTheme = db.theme == "dark" ? true : false;
-const bookMarks =
-  userbookMarks && typeof userbookMarks != "string"
-    ? userbookMarks
-    : defaultBookMarks;
+
+//luc fix 换成接口请求书签
+// const bookMarks =
+//   userbookMarks && typeof userbookMarks != "string"
+//     ? userbookMarks
+//     : defaultBookMarks;
+const bookMarks = userbookMark;
 
 export const store = reactive({
   iconAPI: iconAPI ? iconAPI : defaultIconAPI,
@@ -56,5 +68,5 @@ export const store = reactive({
   },
   setOpenBookMarkJump(value: string) {
     this.openBookMarkJump = value;
-  },
+  }
 });

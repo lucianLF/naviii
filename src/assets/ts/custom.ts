@@ -6,8 +6,8 @@ import defaultEnginesMap from "@/assets/config/search.json";
 import defaultBookMarks from "@/assets/config/bookmarks.json";
 
 // PC
-let itemIconSize = 80;
-let itemTitleSize = 20;
+let itemIconSize = 50;
+let itemTitleSize = 15;
 let settingPageWidth = 450;
 // MOBILE
 function setMobileValues() {
